@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88874356-2953-4755-8ED9-DF426FD0BA06}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Streed</RootNamespace>
+    <AssemblyName>Streed</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Streed_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Streed.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ConfigurationFilter>
+    </ConfigurationFilter>
+    <AssemblyInfoFilePath>Properties\AssemblyInfo.cs</AssemblyInfoFilePath>
+    <UpdateAssemblyVersion>True</UpdateAssemblyVersion>
+    <UpdateAssemblyFileVersion>True</UpdateAssemblyFileVersion>
+    <UpdateAssemblyInfoVersion>True</UpdateAssemblyInfoVersion>
+    <AssemblyVersionSettings>None.None.YearStamp.DayOfYearStamp</AssemblyVersionSettings>
+    <AssemblyFileVersionSettings>None.None.YearStamp.DayOfYearStamp</AssemblyFileVersionSettings>
+    <AssemblyInfoVersionSettings>None.None.YearStamp.DayOfYearStamp</AssemblyInfoVersionSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Converters\BoolToOpacity.cs" />
+    <Compile Include="Converters\ConvertSignificantDigits.cs" />
+    <Compile Include="Converters\ConvertZeroToDash.cs" />
+    <Compile Include="Converters\ElevationVerticalAxisLabelOffsetConverter.cs" />
+    <Compile Include="Converters\IsDeviceWattsConverter.cs" />
+    <Compile Include="Converters\LeaderboardAthleteFontWeight.cs" />
+    <Compile Include="LTTB.cs" />
+    <Compile Include="Models\ElevationData.cs" />
+    <Compile Include="Models\SerializableException.cs" />
+    <Compile Include="Pages\ActivityPage.xaml.cs">
+      <DependentUpon>ActivityPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AthletePage.xaml.cs">
+      <DependentUpon>AthletePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CommentsPage.xaml.cs">
+      <DependentUpon>CommentsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\AchievementTypeIdToForegroundConverter.cs" />
+    <Compile Include="Converters\ActivityTypeConverter.cs" />
+    <Compile Include="Converters\BoolToVisibilityConverter.cs" />
+    <Compile Include="Converters\CountToVisibilityConverter.cs" />
+    <Compile Include="Converters\ConvertToIntConverter.cs" />
+    <Compile Include="Converters\DateTimeToDateStringConverter.cs" />
+    <Compile Include="Converters\EmptyStringToZeroConverter.cs" />
+    <Compile Include="Converters\NotConverter.cs" />
+    <Compile Include="Converters\NullToVisibilityConverter.cs" />
+    <Compile Include="Converters\SecondsToTimeStringConverter.cs" />
+    <Compile Include="Converters\StringToVisibilityConverter.cs" />
+    <Compile Include="Pages\BasicActivityPage.xaml.cs">
+      <DependentUpon>BasicActivityPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\AverageWattsToPowerCategoryConverter.cs" />
+    <Compile Include="DataAccess\ActivityRepository.cs" />
+    <Compile Include="DataAccess\MapRepository.cs" />
+    <Compile Include="DataAccess\AthleteRepository.cs" />
+    <Compile Include="DataAccess\StreedApplicationSettings.cs" />
+    <Compile Include="DesignData\ActivityPage.cs" />
+    <Compile Include="DesignData\AthletePage.cs" />
+    <Compile Include="DesignData\BasicActivityPage.cs" />
+    <Compile Include="DesignData\CommentsPage.cs" />
+    <Compile Include="DesignData\MainPage.cs" />
+    <Compile Include="DesignData\RelatedAthletesPage.cs" />
+    <Compile Include="DesignData\SegmentEffortPage.cs" />
+    <Compile Include="Pages\EditActivityPage.xaml.cs">
+      <DependentUpon>EditActivityPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HeartRateZoneData.cs" />
+    <Compile Include="Models\PowerDistributionData.cs" />
+    <Compile Include="Models\PowerZoneData.cs" />
+    <Compile Include="Pages\ErrorPage.xaml.cs">
+      <DependentUpon>ErrorPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MapPage.xaml.cs">
+      <DependentUpon>MapPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pages\RelatedAthletesPage.xaml.cs">
+      <DependentUpon>RelatedAthletesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resolutions.cs" />
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RestSharpExtensions.cs" />
+    <Compile Include="Pages\SegmentEffortPage.xaml.cs">
+      <DependentUpon>SegmentEffortPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Strava\Achievements\Achievement.cs" />
+    <Compile Include="Strava\Activities\Activity.cs" />
+    <Compile Include="Strava\Activities\ActivityZone.cs" />
+    <Compile Include="Strava\Activities\DistributionBucket.cs" />
+    <Compile Include="Strava\Activities\GroupedActivityObservableCollection.cs" />
+    <Compile Include="Strava\Activities\ActivityObservableCollection.cs" />
+    <Compile Include="Strava\Activities\ActivityType.cs" />
+    <Compile Include="Strava\Activities\Lap.cs" />
+    <Compile Include="Strava\Api\Activities.cs" />
+    <Compile Include="Strava\Api\RateLimit.cs" />
+    <Compile Include="Strava\Api\RateLimitExceededException.cs" />
+    <Compile Include="Strava\Api\RestRequest.cs" />
+    <Compile Include="Strava\Api\Athletes.cs" />
+    <Compile Include="Strava\Api\Authentication.cs" />
+    <Compile Include="Strava\Api\AuthorizationFailedException.cs" />
+    <Compile Include="Strava\Api\Segments.cs" />
+    <Compile Include="Strava\Api\Streams.cs" />
+    <Compile Include="Strava\Athletes\Athlete.cs" />
+    <Compile Include="Strava\Authorization\AccessToken.cs" />
+    <Compile Include="Strava\Comments\Comment.cs" />
+    <Compile Include="Strava\Error.cs" />
+    <Compile Include="Strava\Maps\Map.cs" />
+    <Compile Include="Strava\MeasurementType.cs" />
+    <Compile Include="Strava\Response.cs" />
+    <Compile Include="Strava\Segments\Leaderboard.cs" />
+    <Compile Include="Strava\Segments\LeaderboardEffort.cs" />
+    <Compile Include="Strava\Segments\Segment.cs" />
+    <Compile Include="Strava\Segments\SegmentEffort.cs" />
+    <Compile Include="Strava\Streams\Stream.cs" />
+    <Compile Include="Strava\Utilities.cs" />
+    <Compile Include="TiltEffect.cs" />
+    <Compile Include="ViewModels\ActivityViewModel.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\RelatedAthletesViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="Pages\ActivityPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AthletePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\CommentsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\BasicActivityPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\EditActivityPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ErrorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MapPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RelatedAthletesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SegmentEffortPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SettingsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Streed_2015_03_05_11_41_50.sap" />
+    <None Include="Streed_2015_03_05_11_47_55.sap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png" />
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\ConnectWithStrava-2x.png" />
+    <Content Include="Assets\default-athlete-medium-profile-image.png" />
+    <Content Include="Assets\default-athlete-profile-image.png" />
+    <Content Include="Assets\feature.settings.png" />
+    <Content Include="Assets\home-background.jpg" />
+    <Content Include="Assets\kom-icon-transparent.png" />
+    <Content Include="Assets\kom-overall.png" />
+    <Content Include="Assets\kom-year.png" />
+    <Content Include="Assets\layers-128.png" />
+    <Content Include="Assets\layers-32.png" />
+    <Content Include="Assets\map-aerial.png" />
+    <Content Include="Assets\map-hybrid.png" />
+    <Content Include="Assets\map-icon-end.png" />
+    <Content Include="Assets\map-icon-start.png" />
+    <Content Include="Assets\map-road.png" />
+    <Content Include="Assets\map-terrain.png" />
+    <Content Include="Assets\my.profile.medium.jpg" />
+    <Content Include="Assets\pr-1st.png" />
+    <Content Include="Assets\pr-2nd.png" />
+    <Content Include="Assets\pr-3rd.png" />
+    <Content Include="Assets\search.refine.png" />
+    <Content Include="Assets\segment_map.png" />
+    <Content Include="Assets\summary_map.png" />
+    <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileMedium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileWide.png" />
+    <Content Include="Assets\Tiles\IconicTileMediumLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\trophy-overall.png" />
+    <Content Include="Assets\trophy-year.png" />
+    <Content Include="Assets\wp-store-app-title-icon-reverse.png" />
+    <Content Include="default.html" />
+    <Content Include="FlipCycleTileMedium.png" />
+    <Content Include="README_FIRST.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone.Controls.Toolkit">
+      <HintPath>..\..\..\phone-89977\Bin\WP8\Release\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp.WindowsPhone">
+      <HintPath>..\packages\RestSharp.105.0.1\lib\sl4-wp71\RestSharp.WindowsPhone.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls.Chart, Version=2015.1.224.3040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Users\Michael Henasey\AppData\Roaming\Telerik\Updates\Telerik_UI_for_WindowsPhone8_2015_1_0224_DEV_hotfix\Binaries\WindowsPhone\Telerik.Windows.Controls.Chart.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls.Primitives, Version=2015.1.224.3040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Users\Michael Henasey\AppData\Roaming\Telerik\Updates\Telerik_UI_for_WindowsPhone8_2015_1_0224_DEV_hotfix\Binaries\WindowsPhone\Telerik.Windows.Controls.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Core, Version=2015.1.224.3040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Users\Michael Henasey\AppData\Roaming\Telerik\Updates\Telerik_UI_for_WindowsPhone8_2015_1_0224_DEV_hotfix\Binaries\WindowsPhone\Telerik.Windows.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>
