@@ -183,7 +183,10 @@ AppPackages/
 BundleArtifacts/
 Package.StoreAssociation.xml
 _pkginfo.txt
+<<<<<<< HEAD
 *.appx
+=======
+>>>>>>> 00da7de668110bf3be71e7c34028a14ee64b84b4
 
 # Visual Studio cache files
 # files ending in .cache can be ignored
@@ -286,4 +289,8 @@ __pycache__/
 *.btp.cs
 *.btm.cs
 *.odx.cs
+<<<<<<< HEAD
 *.xsd.cs
+=======
+*.xsd.cs
+>>>>>>> 00da7de668110bf3be71e7c34028a14ee64b84b4
